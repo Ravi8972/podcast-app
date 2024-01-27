@@ -1,0 +1,25 @@
+.custom-btn,
+.profile-btn {
+  text-align: center;
+  border: 2px solid var(--purple-grey);
+  padding: 1rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  width: 70vw;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.custom-btn:hover,
+.profile-btn:hover {
+  background: linear-gradient(90deg, rgba(3,27,33,1) 7%, rgba(21,107,131,1) 49%, rgba(3,32,40,1) 92%);
+ 
+  background-position: right center;
+  color: var(--theme);
+  transition: all 0s ease-in;
+}
+
+.profile-btn {
+  width: 150px;
+}

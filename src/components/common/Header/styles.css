@@ -1,0 +1,122 @@
+.navbar {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profileImage {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+  }
+  
+  .profileImage img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border: 2px solid #125355;
+  }
+  
+  .profileImage p {
+    color: #b4b0b0;
+    padding-left: 18px;
+    font-size: 1rem;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .links a {
+    color: #8ea6bb;
+    font-weight: 500;
+  }
+  
+  .links a:hover {
+    color: var(--white);
+    transition: all 0.4s;
+  }
+  
+  .links .active {
+    color: var(--white) !important;
+    transition: all 0.4s;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    background: var(--blue);
+    filter: blur(100px);
+    z-index: -1;
+    top: -120px;
+  }
+  
+  .hideInDesktop {
+    display: none;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .gradient {
+      width: 300px;
+    }
+  
+    .hideInMobile {
+      display: none;
+    }
+  
+    .links {
+      gap: 0.75rem;
+    }
+  
+    .links a {
+      font-size: 12px;
+    }
+  
+    .navbar {
+      justify-content: end;
+    }
+  
+    .mobileAddIcon {
+      margin-left: 1rem;
+      box-shadow: 0px 0px 12px 0 rgba(255, 255, 255, 0.125);
+      border-radius: 50%;
+      display: inline-flex;
+    }
+  
+    .menuIcon {
+      opacity: 0.7;
+      display: inline-flex;
+      margin-left: 12px;
+    }
+  
+    .hideInDesktop {
+      display: inherit;
+    }
+  
+    .profileImage img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-text {
+    animation: fadeIn 1500ms;
+  }
