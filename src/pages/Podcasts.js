@@ -220,7 +220,7 @@ const [spotify, setSpotify] = useState(dummydata);
       <div className="input-wrapper-podcast" style={{ marginTop: "1rem" }}>
         <div className="discover-header">
           <div>
-            <h1>Discover</h1>
+            <h1>Discover Podcasts</h1>
           </div>
           <div className="discover-icons">
             <BiDotsHorizontalRounded />
